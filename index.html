@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generous Living Services | 24-Hour Customized &amp; Assisted Living in Minnesota</title>
+<meta name="description" content="Generous Living Services provides 24-hour customized and assisted living and in-home support for people on CADI, BI, DD and EW/AC waivers in the Twin Cities metro. Referrals by email.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#4A2545;
+    --plum-deep:#351A31;
+    --plum-soft:#6E4868;
+    --blush:#F3DCD4;
+    --blush-pale:#FBF1EC;
+    --white:#FFFDFC;
+    --olive:#6B7A3A;
+    --olive-pale:#EBEEDC;
+    --text:#4B3A48;
+    --line:#E8D6D0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  body{font-family:'Karla',system-ui,sans-serif;font-size:17.5px;line-height:1.65;color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--plum);line-height:1.12}
+  a{color:var(--plum)}
+  a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--olive);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  header{position:absolute;inset:0 0 auto 0;z-index:10}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:84px;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--white)}
+  .brand svg{width:36px;height:36px;flex:none}
+  .brand span{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem}
+  .nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+  .nav ul a{color:#E9D7E4;text-decoration:none;font-weight:500}
+  .nav ul a:hover{color:var(--white)}
+  .nav .cta{white-space:nowrap;background:var(--blush);color:var(--plum);padding:10px 18px;border-radius:999px;font-weight:700}
+  .nav .cta:hover{background:var(--white);color:var(--plum)}
+  @media (max-width:780px){.nav ul li.hide{display:none}}
+
+  .hero{background:var(--plum);color:#E9D7E4;padding:150px 0 0;position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:end}
+  .hero h1{color:var(--white);font-size:clamp(2.6rem,6.4vw,5rem);line-height:1.02;margin-bottom:26px}
+  .hero p{font-size:1.18rem;max-width:48ch;margin-bottom:36px}
+  .hero-card{background:var(--white);color:var(--text);border-radius:22px 22px 0 0;padding:30px 30px 34px}
+  .hero-card h2{font-size:1.55rem;margin-bottom:8px}
+  .hero-card p{font-size:1rem;margin-bottom:18px;color:var(--text);max-width:none}
+  .hero-card .email{display:block;font-weight:700;color:var(--plum);font-size:1.08rem;overflow-wrap:anywhere;margin-bottom:18px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:inherit;font-weight:700;font-size:1rem;text-decoration:none;padding:14px 24px;border-radius:999px;border:2px solid transparent;cursor:pointer}
+  .btn-plum{background:var(--plum);color:var(--white)}
+  .btn-plum:hover{background:var(--plum-deep)}
+  .btn-line{border-color:rgba(255,255,255,.4);color:var(--white)}
+  .btn-line:hover{border-color:var(--white)}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:64px}
+  .hero-card small{display:block;margin-top:14px;color:var(--plum-soft);font-size:.92rem}
+
+  section{padding:96px 0}
+  .head{max-width:620px;margin-bottom:46px}
+  .head h2{font-size:clamp(2rem,3.8vw,2.9rem);margin-bottom:14px}
+  .head p{font-size:1.1rem}
+
+  /* waiver explainer */
+  .explain{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+  .explain .head{position:sticky;top:32px;margin-bottom:0}
+  .w-list{border-top:1px solid var(--line)}
+  details{border-bottom:1px solid var(--line)}
+  summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:120px 1fr 28px;gap:16px;align-items:center;padding:24px 4px}
+  summary::-webkit-details-marker{display:none}
+  summary b{white-space:nowrap;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.9rem;color:var(--plum)}
+  summary span{font-weight:600;color:var(--plum);font-size:1.05rem}
+  summary i{width:28px;height:28px;border-radius:50%;background:var(--blush);position:relative}
+  summary i::before,summary i::after{content:"";position:absolute;left:8px;top:13px;width:12px;height:2px;background:var(--plum);transition:transform .2s}
+  summary i::after{transform:rotate(90deg)}
+  details[open] summary i::after{transform:rotate(0)}
+  details .body{padding:0 4px 26px 140px;max-width:62ch}
+  details .body p+p{margin-top:10px}
+  @media (max-width:700px){summary{grid-template-columns:80px 1fr 28px}summary b{font-size:1.5rem}details .body{padding:0 4px 22px 4px}}
+
+  .living{background:var(--blush-pale)}
+  .living-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 56px}
+  .living-grid div{border-left:3px solid var(--olive);padding-left:22px}
+  .living-grid h3{font-size:1.5rem;margin-bottom:6px}
+
+  .steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:36px;counter-reset:n}
+  .steps li{counter-increment:n}
+  .steps li::before{content:counter(n);font-family:'DM Serif Display',Georgia,serif;font-size:3.4rem;line-height:1;color:var(--blush);display:block;margin-bottom:10px;-webkit-text-stroke:1.5px var(--plum)}
+  .steps h3{font-size:1.4rem;margin-bottom:6px}
+
+  .area{background:var(--olive-pale)}
+  .area-box{display:flex;justify-content:space-between;gap:40px;align-items:center;flex-wrap:wrap}
+  .area-box h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:10px}
+  .area-box p{max-width:52ch;font-size:1.08rem}
+
+  .contact{background:var(--plum-deep);color:#E2CFDC}
+  .contact h2{color:var(--white);font-size:clamp(2.1rem,4.4vw,3.4rem);max-width:16ch;margin-bottom:16px}
+  .contact .intro{max-width:54ch;font-size:1.1rem;margin-bottom:44px}
+  .boxes{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.18)}
+  .box{padding:30px 28px 30px 0;text-decoration:none;display:block}
+  .box+.box{padding-left:28px;border-left:1px solid rgba(255,255,255,.18)}
+  .box h3{color:var(--white);font-size:1.45rem;margin-bottom:6px}
+  .box p{font-size:.98rem;margin-bottom:14px;color:#E2CFDC}
+  .box span{color:var(--blush);font-weight:700;overflow-wrap:anywhere;border-bottom:2px solid transparent}
+  .box:hover span{border-color:var(--blush)}
+
+  footer{background:var(--plum-deep);border-top:1px solid rgba(255,255,255,.12);color:#B79CB2;padding:26px 0;font-size:.93rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:#E2CFDC}
+
+  @media (max-width:900px){
+    .hero-grid,.explain{grid-template-columns:1fr;gap:36px}
+    .explain .head{position:static}
+    .hero-card{border-radius:22px 22px 0 0}
+    .hero-actions{padding-bottom:0}
+    .steps,.living-grid{grid-template-columns:1fr}
+    .boxes{grid-template-columns:1fr}
+    .box,.box+.box{padding:24px 0;border-left:0;border-bottom:1px solid rgba(255,255,255,.18)}
+  }
+  @media (max-width:600px){
+    body{font-size:16.5px}
+    .hero{padding-top:120px}
+    section{padding:64px 0}
+    .nav ul{gap:14px}
+    .brand span{font-size:1.08rem}
+    .brand svg{width:30px;height:30px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Generous Living Services home">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="18" fill="#F3DCD4"/><path d="M18 27c-6.3-4.2-9.5-7.6-9.5-11.4a4.9 4.9 0 0 1 9.5-1.7 4.9 4.9 0 0 1 9.5 1.7C27.5 19.4 24.3 22.8 18 27Z" fill="#4A2545"/><path d="M14 17.5h8" stroke="#F3DCD4" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>Generous Living Services</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li class="hide"><a href="#waivers">Who we support</a></li>
+        <li class="hide"><a href="#living">Our homes</a></li>
+        <li><a class="cta" href="#contact">Email us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Care that makes everyday life simpler.</h1>
+        <p>Generous Living Services provides 24-hour customized and assisted living, plus in-home support, for adults on Minnesota disability and elderly waivers.</p>
+        <div class="hero-actions">
+          <a class="btn btn-line" href="#waivers">See who we support</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Referring someone?</h2>
+        <p>Email the client's details and support plan. We reply by email, and it's the fastest way to reach us.</p>
+        <a class="email" href="mailto:referrals@generouslivingservices.com?subject=New%20referral">referrals@<wbr>generouslivingservices.com</a>
+        <a class="btn btn-plum" href="mailto:referrals@generouslivingservices.com?subject=New%20referral&body=Client%20name%20or%20initials%3A%0AWaiver%20type%3A%0ACounty%3A%0ACare%20needs%3A%0APreferred%20area%3A%0AMove-in%20timeline%3A%0A%0AYour%20name%20and%20agency%3A%0A">Email a referral</a>
+        <small>We don't take referrals by phone.</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="waivers">
+    <div class="wrap explain">
+      <div class="head">
+        <h2>Who we support</h2>
+        <p>We serve adults whose care is funded through one of four Minnesota waiver programs. Open each one to see what that looks like with us.</p>
+      </div>
+      <div class="w-list">
+        <details open>
+          <summary><b>CADI</b><span>Community Access for Disability Inclusion</span><i aria-hidden="true"></i></summary>
+          <div class="body">
+            <p>For adults with disabilities who need the level of care a nursing facility would give, but want to live in the community instead.</p>
+            <p>With us, that means 24-hour customized living in a residential home, with help for daily routines, medications and appointments.</p>
+          </div>
+        </details>
+        <details>
+          <summary><b>BI</b><span>Brain Injury waiver</span><i aria-hidden="true"></i></summary>
+          <div class="body">
+            <p>For adults with an acquired or traumatic brain injury who need support with daily living, structure and safety.</p>
+            <p>We keep routines consistent and predictable, and work closely with the person's case manager and therapists.</p>
+          </div>
+        </details>
+        <details>
+          <summary><b>DD</b><span>Developmental Disabilities waiver</span><i aria-hidden="true"></i></summary>
+          <div class="body">
+            <p>For adults with developmental or intellectual disabilities who want a home setting with staff available around the clock.</p>
+            <p>Care plans focus on independence skills, community activities and the things each person enjoys.</p>
+          </div>
+        </details>
+        <details>
+          <summary><b>EW/AC</b><span>Elderly Waiver and Alternative Care</span><i aria-hidden="true"></i></summary>
+          <div class="body">
+            <p>For older adults who need help to keep living safely outside a nursing home.</p>
+            <p>We provide assisted living support with personal care, medication help and supervision, in a calm home environment.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="living" id="living">
+    <div class="wrap">
+      <div class="head">
+        <h2>Life in our homes</h2>
+        <p>Our customized and assisted living homes are small, comfortable and staffed 24 hours a day. Each resident has a care plan made with them and their team.</p>
+      </div>
+      <div class="living-grid">
+        <div><h3>Personal care</h3><p>Help with bathing, dressing, grooming and daily routines, at each person's pace.</p></div>
+        <div><h3>Medication support</h3><p>Trained staff manage medication schedules and watch for changes in health.</p></div>
+        <div><h3>In-home support</h3><p>For people who live on their own, we can provide support in their home instead.</p></div>
+        <div><h3>Community life</h3><p>Help getting to appointments, outings and activities, so home isn't the only place residents go.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <h2>From referral to move-in</h2>
+        <p>The whole process happens by email, so nothing gets lost between calls.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Email the referral</h3><p>Send the client's details and support plan to referrals@generouslivingservices.com.</p></li>
+        <li><h3>We review and reply</h3><p>We check care needs and waiver against our openings and reply by email with next steps.</p></li>
+        <li><h3>Visit and move in</h3><p>We arrange a visit, then set a move-in date with the case manager and family.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="area">
+    <div class="wrap area-box">
+      <div>
+        <h2>Serving the Twin Cities metro</h2>
+        <p>Openings change often. Email us with the area your client prefers and we'll tell you what's available.</p>
+      </div>
+      <a class="btn btn-plum" href="mailto:openings@generouslivingservices.com?subject=Current%20openings">Ask about openings</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Email is the fastest way to reach us.</h2>
+      <p class="intro">We handle referrals and questions by email only. Choose the inbox that matches what you need.</p>
+      <div class="boxes">
+        <a class="box" href="mailto:referrals@generouslivingservices.com?subject=New%20referral">
+          <h3>Referrals</h3>
+          <p>Refer a new client for customized living, assisted living or in-home support.</p>
+          <span>referrals@<wbr>generouslivingservices.com</span>
+        </a>
+        <a class="box" href="mailto:openings@generouslivingservices.com?subject=Current%20openings">
+          <h3>Openings</h3>
+          <p>Ask which homes have a bed available right now.</p>
+          <span>openings@<wbr>generouslivingservices.com</span>
+        </a>
+        <a class="box" href="mailto:info@generouslivingservices.com">
+          <h3>General</h3>
+          <p>Questions about services, waivers or visits.</p>
+          <span>info@<wbr>generouslivingservices.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="y">2026</span> Generous Living Services. Twin Cities metro, Minnesota.</span>
+    <a href="mailto:info@generouslivingservices.com">info@<wbr>generouslivingservices.com</a>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
