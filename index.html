@@ -94,6 +94,13 @@
   .area-box{display:flex;justify-content:space-between;gap:40px;align-items:center;flex-wrap:wrap}
   .area-box h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:10px}
   .area-box p{max-width:52ch;font-size:1.08rem}
+  .cities{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:36px 0 44px}
+  .cities li{background:var(--white);color:var(--plum);font-weight:700;padding:9px 18px;border-radius:999px;border:1px solid #D6DBBE}
+  .opts{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+  .opts div{border-left:3px solid var(--olive);padding-left:18px}
+  .opts h3{font-size:1.3rem;margin-bottom:4px}
+  @media (max-width:900px){.opts{grid-template-columns:1fr 1fr}}
+  @media (max-width:600px){.opts{grid-template-columns:1fr}}
 
   .contact{background:var(--plum-deep);color:#E2CFDC}
   .contact h2{color:var(--white);font-size:clamp(2.1rem,4.4vw,3.4rem);max-width:16ch;margin-bottom:16px}
@@ -140,7 +147,7 @@
     <nav aria-label="Main">
       <ul>
         <li class="hide"><a href="#waivers">Who we support</a></li>
-        <li class="hide"><a href="#living">Our homes</a></li>
+        <li class="hide"><a href="#locations">Locations</a></li>
         <li><a class="cta" href="#contact">Email us</a></li>
       </ul>
     </nav>
@@ -161,7 +168,7 @@
         <h2>Referring someone?</h2>
         <p>Email the client's details and support plan. We reply by email, and it's the fastest way to reach us.</p>
         <a class="email" href="mailto:referrals@generouslivingservices.com?subject=New%20referral">referrals@<wbr>generouslivingservices.com</a>
-        <a class="btn btn-plum" href="mailto:referrals@generouslivingservices.com?subject=New%20referral&body=Client%20name%20or%20initials%3A%0AWaiver%20type%3A%0ACounty%3A%0ACare%20needs%3A%0APreferred%20area%3A%0AMove-in%20timeline%3A%0A%0AYour%20name%20and%20agency%3A%0A">Email a referral</a>
+        <a class="btn btn-plum" href="mailto:referrals@generouslivingservices.com?subject=New%20referral&body=Client%20name%20or%20initials%3A%0AWaiver%20type%3A%0ACounty%3A%0ACare%20needs%3A%0APreferred%20city%3A%0AMove-in%20timeline%3A%0AHome%20needs%20(age%20group%2C%20wheelchair%20access%2C%20pets)%3A%0A%0AYour%20name%20and%20agency%3A%0A">Email a referral</a>
         <small>We don't take referrals by phone.</small>
       </div>
     </div>
@@ -235,13 +242,25 @@
     </div>
   </section>
 
-  <section class="area">
-    <div class="wrap area-box">
-      <div>
-        <h2>Serving the Twin Cities metro</h2>
-        <p>Openings change often. Email us with the area your client prefers and we'll tell you what's available.</p>
+  <section class="area" id="locations">
+    <div class="wrap">
+      <div class="area-box">
+        <div>
+          <h2>Homes in ten cities</h2>
+          <p>Our homes are across the north and west metro. Openings change often, so email us with the area your client prefers and we'll tell you what's available.</p>
+        </div>
+        <a class="btn btn-plum" href="mailto:openings@generouslivingservices.com?subject=Current%20openings">Ask about openings</a>
       </div>
-      <a class="btn btn-plum" href="mailto:openings@generouslivingservices.com?subject=Current%20openings">Ask about openings</a>
+      <ul class="cities" aria-label="Cities with Generous Living homes">
+        <li>Brooklyn Park</li><li>Brooklyn Center</li><li>Fridley</li><li>Mounds View</li><li>Columbia Heights</li>
+        <li>Roseville</li><li>Coon Rapids</li><li>Plymouth</li><li>Champlin</li><li>Ramsey</li>
+      </ul>
+      <div class="opts">
+        <div><h3>Age groups</h3><p>Homes for adults 18+ and homes for adults 55+.</p></div>
+        <div><h3>Pets</h3><p>Pet-friendly homes and no-pet homes.</p></div>
+        <div><h3>Accessibility</h3><p>Wheelchair-accessible homes and standard homes.</p></div>
+        <div><h3>Rent</h3><p>Based on income, so residents keep part of their income for personal use.</p></div>
+      </div>
     </div>
   </section>
 
@@ -272,7 +291,7 @@
 
 <footer>
   <div class="wrap">
-    <span>&copy; <span id="y">2026</span> Generous Living Services. Twin Cities metro, Minnesota.</span>
+    <span>&copy; <span id="y">2026</span> Generous Living Services. North and west Twin Cities metro, Minnesota.</span>
     <a href="mailto:info@generouslivingservices.com">info@<wbr>generouslivingservices.com</a>
   </div>
 </footer>
